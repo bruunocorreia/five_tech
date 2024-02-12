@@ -197,7 +197,7 @@ const wPackConfig = {
 const server = http.createServer(app);
 
 // Allow the server to listen on port 80
-const PORT = 8080;
+const PORT = 80;
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
