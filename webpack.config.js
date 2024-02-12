@@ -2,7 +2,17 @@ const http = require('http');
 const express = require('express');
 const app = express();
 const path = require('path');
-
+var glob = require('glob-all');
+const webpack = require('webpack');
+const HandlebarsPlugin = require('handlebars-webpack-plugin');
+const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const MinifyPlugin = require('babel-minify-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const mergeJSON = require('handlebars-webpack-plugin/utils/mergeJSON');
+const OptimizeCssAssetsPlugin =   require('optimize-css-assets-webpack-plugin');
 // Project config data.
 // Go here to change stuff for the whole demo, ie, change the navbar.
 // Also go here for the various data loops, ie, category products, slideshows
