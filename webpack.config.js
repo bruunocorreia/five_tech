@@ -1,3 +1,6 @@
+const http = require('http');
+const express = require('express');
+const app = express();
 const path = require('path');
 var glob = require('glob-all');
 const webpack = require('webpack');
@@ -10,13 +13,10 @@ const CopyPlugin = require('copy-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const mergeJSON = require('handlebars-webpack-plugin/utils/mergeJSON');
 const OptimizeCssAssetsPlugin =   require('optimize-css-assets-webpack-plugin');
-
-
 // Project config data.
 // Go here to change stuff for the whole demo, ie, change the navbar.
 // Also go here for the various data loops, ie, category products, slideshows
 const projectData = mergeJSON(path.join(__dirname, '/src/data/**/*.json'));
-
 
 //PurgeCSS Paths
 const purgeCSSPaths = {
@@ -45,7 +45,6 @@ const paths = {
         favicon: './assets/favicon',
     }
 }
-
 
 // Main webpack config options.
 const wPackConfig = {
@@ -194,5 +193,13 @@ const wPackConfig = {
         }),
     ]
 };
+
+const server = http.createServer(app);
+
+// Allow the server to listen on port 80
+const PORT = 8080;
+server.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 module.exports = wPackConfig;
