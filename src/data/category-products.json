@@ -1,11 +1,11 @@
 {
     "entries": [
         {
-            "title": "Full Zip Hoodie",
+            "title": "Moletom com Zíper Completo",
             "brand": "The North Face",
             "price": "1129.99",
-            "currency": "$",
-            "options": "Availble in 4 colours, 10 sizes",
+            "currency": "R$",
+            "options": "Disponível em 4 cores, 10 tamanhos",
             "img": "{{webRoot}}/assets/images/products/product-1.jpg",
             "img-hover": "{{webRoot}}/assets/images/products/product-1b.jpg",
             "id": "product-1",
@@ -13,11 +13,11 @@
             "review-count":"4.7 (456)"
         },
         {
-            "title": "Mens Sherpa Hoodie",
+            "title": "Moletom Sherpa para Homens",
             "brand": "Timberland",
             "price": "150.00",
-            "currency": "$",
-            "options": "Availble in 4 colours, 7 sizes",
+            "currency": "R$",
+            "options": "Disponível em 4 cores, 7 tamanhos",
             "img": "{{webRoot}}/assets/images/products/product-2.jpg",
             "sale-price": "599.55",
             "discount-percentage": "-25%",
@@ -26,11 +26,11 @@
             "review-width": "60%"
         },
         {
-            "title": "Womens Essentials Hoodie",
+            "title": "Moletom Essencial para Mulheres",
             "brand": "Osprey",
             "price": "1100.00",
-            "currency": "$",
-            "options": "Availble in 2 colours, 3 sizes",
+            "currency": "R$",
+            "options": "Disponível em 2 cores, 3 tamanhos",
             "img": "{{webRoot}}/assets/images/products/product-3.jpg",
             "sale-price": "779.55",
             "discount-percentage": "-65%",
@@ -39,22 +39,22 @@
             "review-width": "20%"
         },
         {
-            "title": "Elevated Lined Hoodie",
+            "title": "Moletom Forrado Elevado",
             "brand": "Timberland",
             "price": "1829.99",
-            "currency": "$",
-            "options": "Availble in 4 colours, 7 sizes",
+            "currency": "R$",
+            "options": "Disponível em 4 cores, 7 tamanhos",
             "img": "{{webRoot}}/assets/images/products/product-4.jpg",
             "id": "product-4",
             "review-width": "70%",
             "review-count":"4.4 (1289)"
         },
         {
-            "title": "Mens Slab Hoodie",
+            "title": "Moletom Slab para Homens",
             "brand": "Adidas Originals",
             "price": "29.99",
-            "currency": "$",
-            "options": "Availble in 4 colours, 7 sizes",
+            "currency": "R$",
+            "options": "Disponível em 4 cores, 7 tamanhos",
             "img": "{{webRoot}}/assets/images/products/product-5.jpg",
             "img-hover": "{{webRoot}}/assets/images/products/product-5b.jpg",
             "id": "product-5",
@@ -62,22 +62,22 @@
             "review-count":"4.8 (189)"
         },
         {
-            "title": "Blocked Striped Hoodie",
+            "title": "Moletom Listrado Bloqueado",
             "brand": "Superdry",
             "price": "1329.99",
-            "currency": "$",
-            "options": "Availble in 4 colours, 7 sizes",
+            "currency": "R$",
+            "options": "Disponível em 4 cores, 7 tamanhos",
             "img": "{{webRoot}}/assets/images/products/product-6.jpg",
             "id": "product-6",
             "review-width": "60%",
             "review-count":"4.5 (1567)"
         },
         {
-            "title": "Womens Classic Hoodie",
+            "title": "Moletom Clássico para Mulheres",
             "brand": "Adidas",
             "price": "150.00",
-            "currency": "$",
-            "options": "Availble in 4 colours, 7 sizes",
+            "currency": "R$",
+            "options": "Disponível em 4 cores, 7 tamanhos",
             "img": "{{webRoot}}/assets/images/products/product-7.jpg",
             "sale-price": "599.55",
             "discount-percentage": "-13%",
@@ -86,11 +86,11 @@
             "review-width": "60%"
         },
         {
-            "title": "Mens Sherpa Hoodie",
+            "title": "Moletom Sherpa para Homens",
             "brand": "Herschel Supply Co",
             "price": "1100.00",
-            "currency": "$",
-            "options": "Availble in 2 colours, 3 sizes",
+            "currency": "R$",
+            "options": "Disponível em 2 cores, 3 tamanhos",
             "img": "{{webRoot}}/assets/images/products/product-8.jpg",
             "sale-price": "779.55",
             "discount-percentage": "-33%",

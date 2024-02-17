@@ -1,5 +1,6 @@
 {
-    "entries": [{
+    "entries": [
+        {
             "img": "{{webRoot}}/assets/images/logos/logo-1.svg",
             "name": "Katmandu"
         },
