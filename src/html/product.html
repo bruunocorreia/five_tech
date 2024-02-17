@@ -1,60 +1,60 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
-<!-- Head -->
+<!-- Cabeçalho -->
 {{> (config config.partials.head) title=config.defaultPageTitle }}
 
 <body class="{{ config.classes.body }}">
 
-    <!-- Navbar -->
+    <!-- Barra de Navegação -->
     {{> (config config.partials.navbar) 
         configClassList=config.classes.navbar
         classList="" }}
-    <!-- / Navbar-->
+    <!-- / Barra de Navegação-->
 
-    <!-- Main Section-->
+    <!-- Seção Principal-->
     <section class="mt-5 {{ config.classes.content }}">
-        <!-- Page Content Goes Here -->
+        <!-- Conteúdo da Página -->
 
-        <!-- Product Top-->
+        <!-- Topo do Produto-->
         <section class="container">
 
-            <!-- Breadcrumbs-->
+            <!-- Navegação por Página-->
             {{> breadcrumbs/breadcrumbs-one }}
-            <!-- /Breadcrumbs-->
+            <!-- /Navegação por Página-->
 
             <div class="row g-5">
 
-                <!-- Images Section-->
+                <!-- Seção de Imagens-->
                 <div class="col-12 col-lg-7">
                     {{> gallery/images-slideshow-vertical }}
                 </div>
-                <!-- /Images Section-->
+                <!-- /Seção de Imagens-->
 
-                <!-- Product Info Section-->
+                <!-- Seção de Informações do Produto-->
                 <div class="col-12 col-lg-5">
                     {{> info/info-one }}
                 </div>
-                <!-- / Product Info Section-->
+                <!-- / Seção de Informações do Produto-->
             </div>
         </section>
-        <!-- / Product Top-->
+        <!-- / Topo do Produto-->
 
         <section>
 
-            <!-- Product Tabs-->
+            <!-- Abas do Produto-->
             <div class="mt-7 pt-5 border-top">
                 <div class="container">
                     {{> tabs/tabs-one }}
                 </div>
             </div>
-            <!-- / Product Tabs-->
+            <!-- / Abas do Produto-->
 
         </section>
 
-        <!-- Related Products-->
+        <!-- Produtos Relacionados-->
         <div class="container my-8">
-            <h3 class="fs-4 fw-bold mb-5 text-center">You May Also Like</h3>
+            <h3 class="fs-4 fw-bold mb-5 text-center">Você Também Pode Gostar</h3>
             {{#if (config category-products) }}
                 {{>
                     swiper/swiper-product-carousel-scrollbar
@@ -62,26 +62,26 @@
                 }}
             {{/if}}
         </div>
-        <!--/ Related Products-->
+        <!--/ Produtos Relacionados-->
 
 
-        <!-- /Page Content -->
+        <!-- /Conteúdo da Página -->
     </section>
-    <!-- / Main Section-->
+    <!-- / Seção Principal-->
 
-    <!-- Footer -->
+    <!-- Rodapé -->
     {{> (config config.partials.footer) 
             configClassList=config.classes.footer 
             classList="" 
         }}
 
-    <!-- Offcanvas Imports-->
+    <!-- Importações de Offcanvas-->
     {{> offcanvas/offcanvas }}
 
-    <!-- Search Overlay-->
+    <!-- Overlay de Pesquisa-->
     {{> search/search-overlay }}    
 
-    <!-- Theme JS -->
+    <!-- Scripts do Tema -->
     {{> footer/scripts }}
 
 </body>

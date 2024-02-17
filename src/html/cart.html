@@ -1,56 +1,56 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt">
 
-<!-- Head -->
+<!-- Cabeçalho -->
 {{> (config config.partials.head) title=config.defaultPageTitle }}
 
 <body class="{{ config.classes.body }}">
 
-    <!-- Navbar -->
+    <!-- Barra de Navegação -->
     {{> (config config.partials.navbar) 
         configClassList=config.classes.navbar
         classList="" }}
-    <!-- / Navbar-->
+    <!-- / Barra de Navegação-->
 
-    <!-- Main Section-->
+    <!-- Seção Principal-->
     <section class="mt-5 container {{ config.classes.content }}">
-        <!-- Page Content Goes Here -->
+        <!-- Conteúdo da Página -->
 
-        <h1 class="mb-6 display-5 fw-bold text-center">Your Cart</h1>
+        <h1 class="mb-6 display-5 fw-bold text-center">Seu Carrinho</h1>
 
         <div class="row g-4 g-md-8">
-            <!-- Cart Items -->
+            <!-- Itens do Carrinho -->
             <div class="col-12 col-lg-6 col-xl-7">
                 <div class="table-responsive">
                     {{> cart/cart-items }}
                 </div>
             </div>
-            <!-- /Cart Items -->
+            <!-- /Itens do Carrinho -->
             <div class="col-12 col-lg-6 col-xl-5">
                 {{> cart/cart-summary }}
             </div>
-            <!-- Cart Summary -->
+            <!-- Resumo do Carrinho -->
 
-            <!-- /Cart Summary -->
+            <!-- /Resumo do Carrinho -->
         </div>
 
-        <!-- /Page Content -->
+        <!-- /Conteúdo da Página -->
     </section>
-    <!-- / Main Section-->
+    <!-- / Seção Principal-->
 
-    <!-- Footer -->
+    <!-- Rodapé -->
     {{> (config config.partials.footer) 
             configClassList=config.classes.footer 
             classList="" 
         }}
 
-    <!-- Offcanvas Imports-->
+    <!-- Importações de Offcanvas-->
     {{> offcanvas/offcanvas }}
 
-    <!-- Search Overlay-->
-    {{> search/search-overlay }}    
+    <!-- Overlay de Pesquisa-->
+    {{> search/search-overlay }}
 
-    <!-- Theme JS -->
+    <!-- Scripts do Tema -->
     {{> footer/scripts }}
 
 </body>
