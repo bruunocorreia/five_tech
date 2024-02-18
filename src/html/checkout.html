@@ -1,7 +1,7 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt">
 
-<!-- Head -->
+<!-- Cabeçalho -->
 {{> (config config.partials.head) title=config.defaultPageTitle }}
 
 <body class="{{ config.classes.body }}">
@@ -12,49 +12,49 @@
         classList="" }}
     <!-- / Navbar-->
 
-    <!-- Main Section-->
+    <!-- Seção Principal-->
     <section class="mt-5 container {{ config.classes.content }}">
-        <!-- Page Content Goes Here -->
+        <!-- Conteúdo da Página -->
 
-        <h1 class="mb-4 display-5 fw-bold text-center">Checkout Securely</h1>
-        <p class="text-center mx-auto">Please fill in the details below to complete your order. Already registered?
-            <a href="#">Login here.</a></p>
+        <h1 class="mb-4 display-5 fw-bold text-center">Finalize a Compra com Segurança</h1>
+        <p class="text-center mx-auto">Por favor, preencha os detalhes abaixo para concluir seu pedido. Já é
+            cadastrado? <a href="#">Faça login aqui.</a></p>
 
-            <div class="row g-md-8 mt-4">
-                <!-- Checkout Panel Left -->
-                <div class="col-12 col-lg-6 col-xl-7">
-                    {{> checkout/checkout-contact }}
-                    {{> checkout/checkout-shipping }}
-                    {{> checkout/checkout-billing }}
-                    {{> checkout/checkout-shipping-method }}
-                    {{> checkout/checkout-payment }}
-                </div>
-                <!-- / Checkout Panel Left -->
-
-                <!-- Checkout Panel Summary -->
-                <div class="col-12 col-lg-6 col-xl-5">
-                    {{> checkout/checkout-summary }}
-                </div>
-                <!-- /Checkout Panel Summary -->
+        <div class="row g-md-8 mt-4">
+            <!-- Painel de Checkout à Esquerda -->
+            <div class="col-12 col-lg-6 col-xl-7">
+                {{> checkout/checkout-contact }}
+                {{> checkout/checkout-shipping }}
+                {{> checkout/checkout-billing }}
+                {{> checkout/checkout-shipping-method }}
+                {{> checkout/checkout-payment }}
             </div>
+            <!-- / Painel de Checkout à Esquerda -->
 
-        <!-- /Page Content -->
+            <!-- Resumo do Checkout -->
+            <div class="col-12 col-lg-6 col-xl-5">
+                {{> checkout/checkout-summary }}
+            </div>
+            <!-- / Resumo do Checkout -->
+        </div>
+
+        <!-- / Conteúdo da Página -->
     </section>
-    <!-- / Main Section-->
+    <!-- / Seção Principal-->
 
-    <!-- Footer -->
+    <!-- Rodapé -->
     {{> (config config.partials.footer) 
             configClassList=config.classes.footer 
             classList="" 
         }}
 
-    <!-- Offcanvas Imports-->
+    <!-- Importações de Offcanvas-->
     {{> offcanvas/offcanvas }}
 
-    <!-- Search Overlay-->
+    <!-- Overlay de Pesquisa-->
     {{> search/search-overlay }}    
 
-    <!-- Theme JS -->
+    <!-- Scripts do Tema -->
     {{> footer/scripts }}
 
 </body>

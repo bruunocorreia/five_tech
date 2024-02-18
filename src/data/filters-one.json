@@ -1,31 +1,31 @@
 {
     "categories": [
         {
-            "label": "Waterproof Jackets",
+            "label": "Jaquetas Impermeáveis",
             "count": "21"
         },
         {
-            "label": "Down Jackets",
+            "label": "Jaquetas de Pluma",
             "count": "13"
         },
         {
-            "label": "Windproof Jackets",
+            "label": "Jaquetas Corta-vento",
             "count": "18"
         },
         {
-            "label": "Hiking Jackets",
+            "label": "Jaquetas de Caminhada",
             "count": "25"
         },
         {
-            "label": "Climbing Jackets",
+            "label": "Jaquetas de Escalada",
             "count": "11"
         },
         {
-            "label": "Trekking Jackets",
+            "label": "Jaquetas de Trekking",
             "count": "19"
         },
         {
-            "label": "Allround Jackets",
+            "label": "Jaquetas Multifuncionais",
             "count": "24"
         }
     ],
@@ -69,27 +69,27 @@
         {
             "label": "Under Armour",
             "count": "24"
-        }           
+        }
     ],
     "type": [
         {
-            "label": "Slip On"
+            "label": "Deslizar"
         },
         {
-            "label": "Strap Up"
+            "label": "Amarração"
         },
         {
-            "label": "Zip Up"
+            "label": "Zíper"
         },
         {
             "label": "Toggle"
         },
         {
-            "label": "Auto"
+            "label": "Automático"
         },
         {
-            "label": "Click"
-        }          
+            "label": "Clique"
+        }
     ],
     "sizes": [
         {
@@ -124,7 +124,7 @@
         },
         {
             "label": "11.5"
-        }          
+        }
     ],
     "colours": [
         {

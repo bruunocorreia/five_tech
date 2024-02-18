@@ -1,17 +1,18 @@
+```html
 <div class="offcanvas offcanvas-end d-none" tabindex="-1" id="offcanvasFilters">
   <div class="offcanvas-header d-flex align-items-center">
-    <h5 class="offcanvas-title" id="offcanvasFiltersLabel">Category Filters</h5>
+    <h5 class="offcanvas-title" id="offcanvasFiltersLabel">Filtros de Categoria</h5>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
     <div class="d-flex flex-column justify-content-between w-100 h-100">
 
-      <!-- Filters-->
+      <!-- Filtros-->
       <div>
         {{#if (config filters-one.categories) }}
-        <!-- Filter Category -->
+        <!-- Filtro de Categoria -->
         <div class="mb-4">
-          <h2 class="mb-4 fs-6 mt-2 fw-bolder">Jacket Category</h2>
+          <h2 class="mb-4 fs-6 mt-2 fw-bolder">Categoria de Jaquetas</h2>
           <nav>
             <ul class="list-unstyled list-default-text">
               {{#each filters-one.categories }}
@@ -20,34 +21,34 @@
             </ul>
           </nav>
         </div>
-        <!-- / Filter Category-->
+        <!-- / Filtro de Categoria-->
         {{/if}}
 
-        <!-- Price Filter -->
+        <!-- Filtro de Preço -->
         <div class="py-4 widget-filter widget-filter-price border-top">
           <a class="small text-body text-decoration-none text-secondary-hover transition-all transition-all fs-6 fw-bolder d-block collapse-icon-chevron"
             data-bs-toggle="collapse" href="#filter-modal-price" role="button" aria-expanded="false"
             aria-controls="filter-modal-price">
-            Price
+            Preço
           </a>
           <div id="filter-modal-price" class="collapse">
             {{> filters/filter-price }}
           </div>
         </div>
-        <!-- / Price Filter -->
+        <!-- / Filtro de Preço -->
 
         {{#if (config filters-one.brands) }}
-        <!-- Brands Filter -->
+        <!-- Filtro de Marcas -->
         <div class="py-4 widget-filter border-top">
           <a class="small text-body text-decoration-none text-secondary-hover transition-all transition-all fs-6 fw-bolder d-block collapse-icon-chevron"
             data-bs-toggle="collapse" href="#filter-modal-brands" role="button" aria-expanded="false"
             aria-controls="filter-modal-brands">
-            Brands
+            Marcas
           </a>
           <div id="filter-modal-brands" class="collapse">
             <div class="input-group my-3 py-1">
-              <input type="text" class="form-control py-2 filter-search rounded" placeholder="Search"
-                aria-label="Search">
+              <input type="text" class="form-control py-2 filter-search rounded" placeholder="Pesquisar"
+                aria-label="Pesquisar">
               <span class="input-group-text bg-transparent p-2 position-absolute top-2 end-0 border-0 z-index-20"><i
                   class="ri-search-2-line text-muted"></i></span>
             </div>
@@ -60,21 +61,21 @@
             </div>
           </div>
         </div>
-        <!-- / Brands Filter -->
+        <!-- / Filtro de Marcas -->
         {{/if}}
 
         {{#if (config filters-one.type) }}
-        <!-- Type Filter -->
+        <!-- Filtro de Tipo -->
         <div class="py-4 widget-filter border-top">
           <a class="small text-body text-decoration-none text-secondary-hover transition-all transition-all fs-6 fw-bolder d-block collapse-icon-chevron"
             data-bs-toggle="collapse" href="#filter-modal-type" role="button" aria-expanded="false"
             aria-controls="filter-modal-type">
-            Type
+            Tipo
           </a>
           <div id="filter-modal-type" class="collapse">
             <div class="input-group my-3 py-1">
-              <input type="text" class="form-control py-2 filter-search rounded" placeholder="Search"
-                aria-label="Search">
+              <input type="text" class="form-control py-2 filter-search rounded" placeholder="Pesquisar"
+                aria-label="Pesquisar">
               <span class="input-group-text bg-transparent p-2 position-absolute top-2 end-0 border-0 z-index-20"><i
                   class="ri-search-2-line text-muted"></i></span>
             </div>
@@ -85,16 +86,16 @@
             </div>
           </div>
         </div>
-        <!-- / Type Filter -->
+        <!-- / Filtro de Tipo -->
         {{/if}}
 
         {{#if (config filters-one.sizes) }}
-        <!-- Sizes Filter -->
+        <!-- Filtro de Tamanhos -->
         <div class="py-4 widget-filter border-top">
           <a class="small text-body text-decoration-none text-secondary-hover transition-all transition-all fs-6 fw-bolder d-block collapse-icon-chevron"
             data-bs-toggle="collapse" href="#filter-modal-sizes" role="button" aria-expanded="false"
             aria-controls="filter-modal-sizes">
-            Sizes
+            Tamanhos
           </a>
           <div id="filter-modal-sizes" class="collapse">
             <div class="filter-options mt-3">
@@ -104,16 +105,16 @@
             </div>
           </div>
         </div>
-        <!-- / Sizes Filter -->
+        <!-- / Filtro de Tamanhos -->
         {{/if}}
 
         {{#if (config filters-one.colours) }}
-        <!-- Colour Filter -->
+        <!-- Filtro de Cores -->
         <div class="py-4 widget-filter border-top">
           <a class="small text-body text-decoration-none text-secondary-hover transition-all transition-all fs-6 fw-bolder d-block collapse-icon-chevron"
             data-bs-toggle="collapse" href="#filter-modal-colour" role="button" aria-expanded="false"
             aria-controls="filter-modal-colour">
-            Colour
+            Cores
           </a>
           <div id="filter-modal-colour" class="collapse">
             <div class="filter-options mt-3">
@@ -123,16 +124,17 @@
             </div>
           </div>
         </div>
-        <!-- / Colour Filter -->
+        <!-- / Filtro de Cores -->
         {{/if}}
       </div>
-      <!-- / Filters-->
+      <!-- / Filtros-->
 
-      <!-- Filter Button-->
+      <!-- Botão de Filtro-->
       <div class="border-top pt-3">
-        <a href="#" class="btn btn-dark mt-2 d-block hover-lift-sm hover-boxshadow">Done</a>
+        <a href="#" class="btn btn-dark mt-2 d-block hover-lift-sm hover-boxshadow">Concluído</a>
       </div>
-      <!-- /Filter Button-->
+      <!-- /Botão de Filtro-->
     </div>
   </div>
 </div>
+```
